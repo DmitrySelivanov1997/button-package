@@ -2,7 +2,6 @@
   "name": "@dmitryselivanov1997/button-package",
   "version": "1.0.0",
   "description": "test package for Federation module practice",
-  "main": "index.js",
   "scripts": {
     "build": "rm -rf dist && babel src --out-dir dist --copy-files",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +16,9 @@
     "url": "https://github.com/DmitrySelivanov1997/button-package/issues"
   },
   "homepage": "https://github.com/DmitrySelivanov1997/button-package#readme",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [ "dist" ],
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.5",
